@@ -1,0 +1,10 @@
+---
+version: '3'
+services:
+  dbw_script:
+    build: .
+    container_name: dbw_script
+    volumes:
+      - ./data.json:/app/`data.json
+    command: >
+      python ./database_writing.py

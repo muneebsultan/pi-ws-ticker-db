@@ -1,0 +1,19 @@
+###########################
+# Docker stop images
+
+sudo docker ps -aq | xargs sudo docker stop | xargs sudo docker rm
+
+sudo docker system prune -a
+
+sudo docker-compose up -d
+
+docker-compose up --build
+
+docker  container ls
+
+
+docker exec <containerId> stop
+
+docker stop freqtrade3
+
+docker rm -f CONTAINER_ID
